@@ -1,0 +1,45 @@
+/* D3DDD theme enhancements: top bar, hero carousel, reveal, 3D */
+body{font-family:var(--fb),system-ui,sans-serif}
+.d3-top{position:relative;z-index:60;background:var(--ink);color:#d8d3c8;font:400 12.5px/34px var(--fb),system-ui,sans-serif;letter-spacing:.04em;border-bottom:1px solid var(--line)}
+.d3-top .wrap{display:flex;justify-content:flex-end;align-items:center;gap:22px;flex-wrap:wrap}
+.d3-top span{margin-right:auto;opacity:.75}
+.d3-top a{color:var(--champ)}.d3-top a:hover{color:#fff}
+header{top:35px}
+@media(max-width:600px){.d3-top{font-size:11.5px}.d3-top span{display:none}.d3-top .wrap{justify-content:center;gap:16px}}
+.d3-foot a{color:var(--champ)}
+/* carousel */
+.d3-car{position:absolute;inset:0;overflow:hidden;touch-action:pan-y}
+.d3-track{display:flex;height:100%;transition:transform .9s cubic-bezier(.77,0,.18,1);will-change:transform}
+.d3-slide{position:relative;flex:0 0 100%;height:100%;margin:0}
+.d3-slide img{width:100%;height:100%;object-fit:cover}
+.d3-slide.on img{animation:kb 9s ease-out both}
+.d3-slide figcaption{position:absolute;right:18px;bottom:14px;z-index:4;font:400 11px/1.4 var(--fb),sans-serif;color:rgba(255,255,255,.7)}
+.d3-slide figcaption a{color:inherit;text-decoration:underline}
+.d3-ctl{position:absolute;z-index:5;right:32px;bottom:110px;display:flex;align-items:center;gap:10px}
+.d3-ctl button{width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.55);background:rgba(0,0,0,.25);color:#fff;font-size:20px;cursor:pointer;backdrop-filter:blur(4px);transition:.3s}
+.d3-ctl button:hover,.d3-ctl button:focus-visible{background:var(--gold);border-color:var(--gold)}
+.d3-dots{display:flex;gap:8px;margin:0 6px}
+.d3-dots button{width:28px!important;height:4px!important;min-width:0!important;min-height:0!important;border-radius:2px!important;padding:0!important;border:0!important;margin:0;backdrop-filter:none;background:rgba(255,255,255,.4)}
+.d3-dots button[aria-current=true]{background:var(--champ)!important;width:44px!important}
+.hero .wrap{pointer-events:none}.hero .wrap a,.hero .wrap button{pointer-events:auto}
+.hero:after{pointer-events:none;z-index:1}
+@media(max-width:600px){.d3-ctl{right:auto;left:20px;bottom:22px}.d3-ctl button{width:38px;height:38px;font-size:16px}.hero .wrap{padding-bottom:96px}.d3-slide figcaption{bottom:auto;top:10px;right:10px}}
+/* 3D block */
+.d3-cube-wrap{position:absolute;z-index:3;right:8%;top:30%;width:150px;height:150px;perspective:900px;pointer-events:none}
+.d3-cube{position:relative;width:100%;height:100%;transform-style:preserve-3d;animation:d3spin 22s linear infinite}
+.d3-cube i{position:absolute;inset:0;background-size:cover;background-position:center;border:1px solid rgba(255,255,255,.35);box-shadow:inset 0 0 40px rgba(0,0,0,.35);opacity:.92}
+.d3-cube i:nth-child(1){transform:translateZ(75px)}.d3-cube i:nth-child(2){transform:rotateY(180deg) translateZ(75px)}
+.d3-cube i:nth-child(3){transform:rotateY(90deg) translateZ(75px)}.d3-cube i:nth-child(4){transform:rotateY(-90deg) translateZ(75px)}
+.d3-cube i:nth-child(5){transform:rotateX(90deg) translateZ(75px)}.d3-cube i:nth-child(6){transform:rotateX(-90deg) translateZ(75px)}
+@keyframes d3spin{from{transform:rotateX(-18deg) rotateY(0)}to{transform:rotateX(-18deg) rotateY(360deg)}}
+@media(max-width:960px){.d3-cube-wrap{display:none}}
+/* tilt cards */
+.d3-tilt{transform-style:preserve-3d;transition:transform .35s ease,box-shadow .35s ease}
+.d3-tilt:hover{box-shadow:0 30px 60px -20px rgba(0,0,0,.45)}
+.sgrid{perspective:1200px}
+/* reveal */
+.rv{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1!important;transform:none!important;transition:none!important}.d3-track{transition:none}.d3-cube,.d3-slide.on img,.hero img.bg{animation:none!important}.d3-tilt{transform:none!important}}
+.d3-tilt,.d3-tilt.rv{transition:opacity .9s ease,transform .35s ease,box-shadow .35s ease}
+.d3-slide img{-webkit-user-drag:none;user-select:none}
+@media(max-width:600px){.hero .scroll{display:none}}
