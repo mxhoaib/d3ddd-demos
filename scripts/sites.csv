@@ -1,0 +1,55 @@
+slug,group,country,area,name,category,trades
+carpentry-joinery,canada-themes,Canada,"Toronto, ON",Oakline Joinery,Carpentry & Joinery,Joinery
+marble-stone,canada-themes,Canada,"Toronto, ON",Lumina Marble,Marble & Stone,Marble
+fitout-interiors,canada-themes,Canada,"Toronto, ON",Aurelia Interiors,Interiors & Fit-Out,Interior;Construction
+contracting-construction,canada-themes,Canada,"Toronto, ON",Meridian Contracting,Building Contracting,Construction
+engineering-consultants,canada-themes,Canada,"Toronto, ON",Axis Engineering,Engineering Consultants,Engineering;Construction
+trading,canada-themes,Canada,"Toronto, ON",Northgate Trading,Building Materials Supply,Trading
+interior-designers,canada-themes,Canada,"Toronto, ON",Solenne Studio,Interior Design Studio,Interior
+uae/carpentry-joinery,uae-themes,UAE,Ajman,Oakline Joinery,Carpentry & Joinery,Joinery
+uae/marble-stone,uae-themes,UAE,Dubai,Lumina Marble,Marble & Stone,Marble
+uae/fitout-interiors,uae-themes,UAE,Dubai,Aurelia Interiors,Interiors & Fit-Out,Interior;Construction
+uae/contracting-construction,uae-themes,UAE,Abu Dhabi,Meridian Contracting,Building Contracting,Construction
+uae/engineering-consultants,uae-themes,UAE,Sharjah,Axis Engineering,Engineering Consultants,Engineering;Construction
+uae/trading,uae-themes,UAE,Dubai,Northgate Trading,Building Materials & General Trading,Trading
+uae/interior-designers,uae-themes,UAE,Abu Dhabi,Solenne Studio,Interior Design Studio,Interior
+greenstar-landscaping,batch1,Canada,"Greater Ottawa, Ontario",Greenstar Landscaping Inc.,,Landscaping
+terragon-site-construction,batch1,Canada,"Bolton, Ontario",Terragon Site Construction Ltd.,,Landscaping;Construction
+scot-roof-co,batch1,US,"Signal Hill & Long Beach, CA",Scot Roof Co,,Roofing
+titan-roofing,batch1,US,"North Shore & Northwest Chicago, IL",Titan Roofing and Gutter Cleaning,,Roofing
+brown-bros-roofing,batch1,Canada,"Keswick & York Region, Ontario",Brown Bros Roofing and Exterior Finishings,,Roofing
+beck-family-roofing,batch1,US,"Philadelphia, PA",Beck Family Roofing,,Roofing
+smart-roofing,batch1,US,"Glenolden & Delaware County, PA",Smart Roofing,,Roofing
+maincare-roofing,batch1,UK,United Kingdom,Maincare Roofing & Building Ltd,,Roofing
+pickles-roofing,batch1,UK,Leeds & Yorkshire,Pickles Roofing,,Roofing
+pjc-landscapes,batch1,UK,"Caterham, Surrey",PJC Landscapes Ltd,,Landscaping
+david-crowder-landscapes,batch1,UK,"Sandhurst, Berkshire",David Crowder Landscapes,,Landscaping
+landscapes-by-genuine,batch1,Canada,"Calgary & area, AB",Landscapes By Genuine,,Landscaping
+gd-landscapes,batch1,UK,"Banbury, Oxfordshire",GD Landscapes,,Landscaping
+landsailor-roofing,batch1,Canada,"Scarborough & the GTA, Ontario",LandSailor Roofing,,Roofing
+cayco-landscaping,batch1,US,United States,Cayco Landscaping,,Landscaping
+jpb-lofts-extensions,batch1,UK,South London & Surrey,JPB Lofts and Extensions Ltd,,Lofts;Construction
+scott-miller-landscaping,batch1,US,"Doylestown & Bucks County, PA",Scott Miller Landscaping LTD,,Landscaping
+digiovanna-bros-landscaping,batch1,US,"Long Island, NY","DiGiovanna Bros. Landscaping, Inc.",,Landscaping
+dj-moore-lofts,batch1,UK,Bedfordshire,DJ Moore Lofts,,Lofts;Construction
+sandys-landscapes,batch1,UK,Pembrokeshire & West Wales,Sandy's Landscapes,,Landscaping
+heartlands-marble,batch2,UK,"Birmingham, West Midlands",Heartlands Marble,,Marble
+steven-mcdonald-granite,batch2,UK,"Scottish Borders, Scotland",Steven McDonald Granite Ltd,,Marble
+pk-joinery-interiors,batch2,UK,"Sutton Coldfield, West Midlands",P K Joinery & Interiors Ltd,,Shopfitting;Joinery;Interior
+a3-shopfitting-joinery,batch2,UK,"Bordon, Hampshire",A3 Shopfitting & Joinery Ltd,,Shopfitting;Joinery
+gcc-concepts,batch2,UK,Birmingham,GCC Concepts Ltd,,Shopfitting;Joinery
+sullivan-brothers-london,batch2,UK,Watford & London,Sullivan Brothers (London) Ltd,,Shopfitting;Joinery
+samwood-kitchens,batch2,Canada,"Concord, Ontario — the GTA",Samwood Kitchens,,Joinery;Interior
+solid-edge-wood-products,batch2,Canada,"Brownsville, Ontario",Solid Edge Wood Products,,Joinery
+spaces-inc,batch2,Canada,"Woodbridge, Ontario",Spaces Inc.,,Joinery;Interior
+bkd-cabinetry,batch2,Canada,Toronto & the GTA,BKD Cabinetry,,Joinery;Interior
+the-gardener-and-co,batch2,Australia,Gold Coast & Byron Bay,The Gardener & Co,,Landscaping
+hluus-concreting,batch2,Australia,"Brisbane & Gold Coast, QLD",HLuu’s Concreting,,Concrete;Landscaping
+bmk-stoneworks,batch2,Australia,"Neerabup, Perth WA",BMK Stoneworks,,Marble
+kersbrook-cabinet-makers,batch2,Australia,"Kersbrook & Adelaide, SA",Kersbrook Cabinet Makers,,Joinery
+solid-surface-benchtops,batch2,Australia,"Adelaide, SA",Solid Surface Benchtops & More,,Marble
+dallas-countertops-floors,batch2,US,"Balch Springs, TX — Dallas area",Dallas Countertops & Floors,,Marble;Joinery
+wise-granite-quartz,batch2,US,"Decatur, TX — Wise County",Wise Granite & Quartz Countertops,,Marble
+heart-of-texas-granite,batch2,US,"Brownwood, TX — Central Texas",Heart of Texas Granite & Marble,,Marble
+de-leon-granite,batch2,US,"Dallas–Fort Worth, TX",De Leon Granite Countertops,,Marble
+georgia-high-quality-construction,batch2,US,"Georgia, United States",Georgia High Quality Construction,,Roofing;Construction

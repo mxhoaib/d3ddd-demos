@@ -1,0 +1,1566 @@
+{
+ "generated_from": "scripts/build_data.py (git log + site folders)",
+ "base": "https://mxhoaib.github.io/d3ddd-demos/",
+ "groups": [
+  {
+   "id": "canada-themes",
+   "title": "Canada themes",
+   "short": "CA themes",
+   "kind": "theme",
+   "accent": "purple"
+  },
+  {
+   "id": "uae-themes",
+   "title": "UAE themes",
+   "short": "UAE themes",
+   "kind": "theme",
+   "accent": "yellow"
+  },
+  {
+   "id": "batch1",
+   "title": "Trade demos: Batch 1",
+   "short": "Batch 1",
+   "kind": "demo",
+   "accent": "teal"
+  },
+  {
+   "id": "batch2",
+   "title": "Trade demos: Batch 2",
+   "short": "Batch 2",
+   "kind": "demo",
+   "accent": "pink"
+  }
+ ],
+ "sites": [
+  {
+   "slug": "carpentry-joinery",
+   "url": "carpentry-joinery/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/carpentry-joinery/",
+   "group": "canada-themes",
+   "kind": "theme",
+   "name": "Oakline Joinery",
+   "category": "Carpentry & Joinery",
+   "trade": "Joinery",
+   "tags": [
+    "Web",
+    "3D",
+    "Joinery"
+   ],
+   "country": "Canada",
+   "area": "Toronto, ON",
+   "pageTitle": "DEMO · Oakline Joinery | Carpentry & Joinery in Toronto, ON",
+   "description": "DEMO — Oakline Joinery: carpentry & joinery in Toronto, ON. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 5,
+   "published": "2026-10-17T06:45:03Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-18T23:03:11+04:00",
+    "2026-10-17T17:43:14Z",
+    "2026-10-17T06:45:03Z"
+   ],
+   "thumb": "assets/thumbs/carpentry-joinery.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "marble-stone",
+   "url": "marble-stone/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/marble-stone/",
+   "group": "canada-themes",
+   "kind": "theme",
+   "name": "Lumina Marble",
+   "category": "Marble & Stone",
+   "trade": "Marble",
+   "tags": [
+    "Web",
+    "3D",
+    "Marble"
+   ],
+   "country": "Canada",
+   "area": "Toronto, ON",
+   "pageTitle": "DEMO · Lumina Marble | Marble & Natural Stone in Toronto, ON",
+   "description": "DEMO — Lumina Marble: marble & natural stone works in Toronto, ON. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 5,
+   "published": "2026-10-17T06:45:03Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-18T23:03:11+04:00",
+    "2026-10-17T17:43:14Z",
+    "2026-10-17T06:45:03Z"
+   ],
+   "thumb": "assets/thumbs/marble-stone.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "fitout-interiors",
+   "url": "fitout-interiors/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/fitout-interiors/",
+   "group": "canada-themes",
+   "kind": "theme",
+   "name": "Aurelia Interiors",
+   "category": "Interiors & Fit-Out",
+   "trade": "Interior",
+   "tags": [
+    "Web",
+    "3D",
+    "Interior",
+    "Construction"
+   ],
+   "country": "Canada",
+   "area": "Toronto, ON",
+   "pageTitle": "DEMO · Aurelia Interiors | Interior Design & Fit-Out in Toronto, ON",
+   "description": "DEMO — Aurelia Interiors: interior design & fit-out in Toronto, ON. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 5,
+   "published": "2026-10-17T06:45:03Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-18T23:03:11+04:00",
+    "2026-10-17T17:43:14Z",
+    "2026-10-17T06:45:03Z"
+   ],
+   "thumb": "assets/thumbs/fitout-interiors.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "contracting-construction",
+   "url": "contracting-construction/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/contracting-construction/",
+   "group": "canada-themes",
+   "kind": "theme",
+   "name": "Meridian Contracting",
+   "category": "Building Contracting",
+   "trade": "Construction",
+   "tags": [
+    "Web",
+    "3D",
+    "Construction"
+   ],
+   "country": "Canada",
+   "area": "Toronto, ON",
+   "pageTitle": "DEMO · Meridian Contracting | Building Contracting in Toronto, ON",
+   "description": "DEMO — Meridian Contracting: building contracting in Toronto, ON. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 5,
+   "published": "2026-10-17T06:45:03Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-18T23:03:11+04:00",
+    "2026-10-17T17:43:14Z",
+    "2026-10-17T06:45:03Z"
+   ],
+   "thumb": "assets/thumbs/contracting-construction.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "engineering-consultants",
+   "url": "engineering-consultants/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/engineering-consultants/",
+   "group": "canada-themes",
+   "kind": "theme",
+   "name": "Axis Engineering",
+   "category": "Engineering Consultants",
+   "trade": "Engineering",
+   "tags": [
+    "Web",
+    "3D",
+    "Engineering",
+    "Construction"
+   ],
+   "country": "Canada",
+   "area": "Toronto, ON",
+   "pageTitle": "DEMO · Axis Engineering | Architecture & Engineering in Toronto, ON",
+   "description": "DEMO — Axis Engineering: architectural & engineering consultancy in Toronto, ON. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 5,
+   "published": "2026-10-17T06:45:03Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-18T23:03:11+04:00",
+    "2026-10-17T17:43:14Z",
+    "2026-10-17T06:45:03Z"
+   ],
+   "thumb": "assets/thumbs/engineering-consultants.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "trading",
+   "url": "trading/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/trading/",
+   "group": "canada-themes",
+   "kind": "theme",
+   "name": "Northgate Trading",
+   "category": "Building Materials Supply",
+   "trade": "Trading",
+   "tags": [
+    "Web",
+    "3D",
+    "Trading"
+   ],
+   "country": "Canada",
+   "area": "Toronto, ON",
+   "pageTitle": "DEMO · Northgate Trading | Building Materials & General Trading in Toronto, ON",
+   "description": "DEMO — Northgate Trading: building materials & general trading in Toronto, ON. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 4,
+   "published": "2026-10-17T17:43:14Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-18T23:03:11+04:00",
+    "2026-10-17T17:43:14Z"
+   ],
+   "thumb": "assets/thumbs/trading.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "interior-designers",
+   "url": "interior-designers/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/interior-designers/",
+   "group": "canada-themes",
+   "kind": "theme",
+   "name": "Solenne Studio",
+   "category": "Interior Design Studio",
+   "trade": "Interior",
+   "tags": [
+    "Web",
+    "3D",
+    "Interior"
+   ],
+   "country": "Canada",
+   "area": "Toronto, ON",
+   "pageTitle": "DEMO · Solenne Studio | Interior Design Studio in Toronto, ON",
+   "description": "DEMO — Solenne Studio: interior design in Toronto, ON. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 4,
+   "published": "2026-10-17T17:43:14Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-18T23:03:11+04:00",
+    "2026-10-17T17:43:14Z"
+   ],
+   "thumb": "assets/thumbs/interior-designers.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "uae/carpentry-joinery",
+   "url": "uae/carpentry-joinery/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/uae/carpentry-joinery/",
+   "group": "uae-themes",
+   "kind": "theme",
+   "name": "Oakline Joinery",
+   "category": "Carpentry & Joinery",
+   "trade": "Joinery",
+   "tags": [
+    "Web",
+    "3D",
+    "Joinery"
+   ],
+   "country": "UAE",
+   "area": "Ajman",
+   "pageTitle": "DEMO · Oakline Joinery | Carpentry & Joinery in Ajman",
+   "description": "DEMO — Oakline Joinery: carpentry & joinery in Ajman, UAE. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 3,
+   "published": "2026-10-17T18:00:58Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-17T18:00:58Z"
+   ],
+   "thumb": "assets/thumbs/uae-carpentry-joinery.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "uae/marble-stone",
+   "url": "uae/marble-stone/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/uae/marble-stone/",
+   "group": "uae-themes",
+   "kind": "theme",
+   "name": "Lumina Marble",
+   "category": "Marble & Stone",
+   "trade": "Marble",
+   "tags": [
+    "Web",
+    "3D",
+    "Marble"
+   ],
+   "country": "UAE",
+   "area": "Dubai",
+   "pageTitle": "DEMO · Lumina Marble | Marble & Natural Stone in Dubai",
+   "description": "DEMO — Lumina Marble: marble & natural stone works in Dubai, UAE. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 3,
+   "published": "2026-10-17T18:00:58Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-17T18:00:58Z"
+   ],
+   "thumb": "assets/thumbs/uae-marble-stone.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "uae/fitout-interiors",
+   "url": "uae/fitout-interiors/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/uae/fitout-interiors/",
+   "group": "uae-themes",
+   "kind": "theme",
+   "name": "Aurelia Interiors",
+   "category": "Interiors & Fit-Out",
+   "trade": "Interior",
+   "tags": [
+    "Web",
+    "3D",
+    "Interior",
+    "Construction"
+   ],
+   "country": "UAE",
+   "area": "Dubai",
+   "pageTitle": "DEMO · Aurelia Interiors | Interior Design & Fit-Out in Dubai",
+   "description": "DEMO — Aurelia Interiors: interior design & fit-out in Dubai, UAE. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 3,
+   "published": "2026-10-17T18:00:58Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-17T18:00:58Z"
+   ],
+   "thumb": "assets/thumbs/uae-fitout-interiors.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "uae/contracting-construction",
+   "url": "uae/contracting-construction/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/uae/contracting-construction/",
+   "group": "uae-themes",
+   "kind": "theme",
+   "name": "Meridian Contracting",
+   "category": "Building Contracting",
+   "trade": "Construction",
+   "tags": [
+    "Web",
+    "3D",
+    "Construction"
+   ],
+   "country": "UAE",
+   "area": "Abu Dhabi",
+   "pageTitle": "DEMO · Meridian Contracting | Building Contracting in Abu Dhabi",
+   "description": "DEMO — Meridian Contracting: building contracting in Abu Dhabi, UAE. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 3,
+   "published": "2026-10-17T18:00:58Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-17T18:00:58Z"
+   ],
+   "thumb": "assets/thumbs/uae-contracting-construction.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "uae/engineering-consultants",
+   "url": "uae/engineering-consultants/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/uae/engineering-consultants/",
+   "group": "uae-themes",
+   "kind": "theme",
+   "name": "Axis Engineering",
+   "category": "Engineering Consultants",
+   "trade": "Engineering",
+   "tags": [
+    "Web",
+    "3D",
+    "Engineering",
+    "Construction"
+   ],
+   "country": "UAE",
+   "area": "Sharjah",
+   "pageTitle": "DEMO · Axis Engineering | Architecture & Engineering in Sharjah",
+   "description": "DEMO — Axis Engineering: architectural & engineering consultancy in Sharjah, UAE. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 3,
+   "published": "2026-10-17T18:00:58Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-17T18:00:58Z"
+   ],
+   "thumb": "assets/thumbs/uae-engineering-consultants.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "uae/trading",
+   "url": "uae/trading/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/uae/trading/",
+   "group": "uae-themes",
+   "kind": "theme",
+   "name": "Northgate Trading",
+   "category": "Building Materials & General Trading",
+   "trade": "Trading",
+   "tags": [
+    "Web",
+    "3D",
+    "Trading"
+   ],
+   "country": "UAE",
+   "area": "Dubai",
+   "pageTitle": "DEMO · Northgate Trading | Building Materials & General Trading in Dubai",
+   "description": "DEMO — Northgate Trading: building materials & general trading in Dubai, UAE. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 3,
+   "published": "2026-10-17T18:00:58Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-17T18:00:58Z"
+   ],
+   "thumb": "assets/thumbs/uae-trading.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "uae/interior-designers",
+   "url": "uae/interior-designers/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/uae/interior-designers/",
+   "group": "uae-themes",
+   "kind": "theme",
+   "name": "Solenne Studio",
+   "category": "Interior Design Studio",
+   "trade": "Interior",
+   "tags": [
+    "Web",
+    "3D",
+    "Interior"
+   ],
+   "country": "UAE",
+   "area": "Abu Dhabi",
+   "pageTitle": "DEMO · Solenne Studio | Interior Design Studio in Abu Dhabi",
+   "description": "DEMO — Solenne Studio: interior design in Abu Dhabi, UAE. Preview website by D3DDD.com.",
+   "pages": 5,
+   "commits": 3,
+   "published": "2026-10-17T18:00:58Z",
+   "updated": "2026-10-18T23:49:46+04:00",
+   "history": [
+    "2026-10-18T23:49:46+04:00",
+    "2026-10-18T23:36:49+04:00",
+    "2026-10-17T18:00:58Z"
+   ],
+   "thumb": "assets/thumbs/uae-interior-designers.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "greenstar-landscaping",
+   "url": "greenstar-landscaping/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/greenstar-landscaping/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Greenstar Landscaping Inc.",
+   "category": "Landscaping",
+   "trade": "Landscaping",
+   "tags": [
+    "Web",
+    "Landscaping"
+   ],
+   "country": "Canada",
+   "area": "Greater Ottawa, Ontario",
+   "pageTitle": "Greenstar Landscaping Inc. | Greater Ottawa, Ontario",
+   "description": "Greenstar Landscaping Inc. — Hard landscaping, Tree surgery, Sod installation, Landscape maintenance. Greater Ottawa, Ontario.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/greenstar-landscaping.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "terragon-site-construction",
+   "url": "terragon-site-construction/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/terragon-site-construction/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Terragon Site Construction Ltd.",
+   "category": "Landscaping",
+   "trade": "Landscaping",
+   "tags": [
+    "Web",
+    "Landscaping",
+    "Construction"
+   ],
+   "country": "Canada",
+   "area": "Bolton, Ontario",
+   "pageTitle": "Terragon Site Construction Ltd. | Ontario (based in Bolton)",
+   "description": "Terragon Site Construction Ltd. — Hardscape & paving, Retaining walls, Concrete & asphalt, Soft landscaping & irrigation. Ontario (based in Bolton).",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/terragon-site-construction.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "scot-roof-co",
+   "url": "scot-roof-co/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/scot-roof-co/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Scot Roof Co",
+   "category": "Roofing",
+   "trade": "Roofing",
+   "tags": [
+    "Web",
+    "Roofing"
+   ],
+   "country": "US",
+   "area": "Signal Hill & Long Beach, CA",
+   "pageTitle": "Scot Roof Co | Signal Hill & Long Beach",
+   "description": "Scot Roof Co — Residential re-roof, Maintenance & repair, Commercial re-roof. Signal Hill & Long Beach — Los Angeles and Orange County, CA.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/scot-roof-co.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "titan-roofing",
+   "url": "titan-roofing/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/titan-roofing/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Titan Roofing and Gutter Cleaning",
+   "category": "Roofing",
+   "trade": "Roofing",
+   "tags": [
+    "Web",
+    "Roofing"
+   ],
+   "country": "US",
+   "area": "North Shore & Northwest Chicago, IL",
+   "pageTitle": "Titan Roofing and Gutter Cleaning | North Shore & Northwest suburbs of Chicago, IL",
+   "description": "Titan Roofing and Gutter Cleaning — New roofs, Re-roof & tear-off, Roof repair, Gutter cleaning. North Shore & Northwest suburbs of Chicago, IL.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/titan-roofing.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "brown-bros-roofing",
+   "url": "brown-bros-roofing/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/brown-bros-roofing/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Brown Bros Roofing and Exterior Finishings",
+   "category": "Roofing",
+   "trade": "Roofing",
+   "tags": [
+    "Web",
+    "Roofing"
+   ],
+   "country": "Canada",
+   "area": "Keswick & York Region, Ontario",
+   "pageTitle": "Brown Bros Roofing and Exterior Finishings | Keswick, Georgina & York Region, Ontario",
+   "description": "Brown Bros Roofing and Exterior Finishings — Roofing & re-roofing, Custom metal roofing, Repairs, Ventilation. Keswick, Georgina & York Region, Ontario.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/brown-bros-roofing.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "beck-family-roofing",
+   "url": "beck-family-roofing/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/beck-family-roofing/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Beck Family Roofing",
+   "category": "Roofing",
+   "trade": "Roofing",
+   "tags": [
+    "Web",
+    "Roofing"
+   ],
+   "country": "US",
+   "area": "Philadelphia, PA",
+   "pageTitle": "Beck Family Roofing | Philadelphia, PA",
+   "description": "Beck Family Roofing — Roof repairs, Flat roofs, Shingle roofs, New roofs. Philadelphia, PA.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/beck-family-roofing.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "smart-roofing",
+   "url": "smart-roofing/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/smart-roofing/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Smart Roofing",
+   "category": "Roofing",
+   "trade": "Roofing",
+   "tags": [
+    "Web",
+    "Roofing"
+   ],
+   "country": "US",
+   "area": "Glenolden & Delaware County, PA",
+   "pageTitle": "Smart Roofing | Glenolden & Delaware County, PA",
+   "description": "Smart Roofing — Flat roofing, Aluminum fiber coating, Roof installation, Emergency repairs. Glenolden & Delaware County, PA.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/smart-roofing.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "maincare-roofing",
+   "url": "maincare-roofing/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/maincare-roofing/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Maincare Roofing & Building Ltd",
+   "category": "Roofing",
+   "trade": "Roofing",
+   "tags": [
+    "Web",
+    "Roofing"
+   ],
+   "country": "UK",
+   "area": "United Kingdom",
+   "pageTitle": "Maincare Roofing & Building Ltd | United Kingdom",
+   "description": "Maincare Roofing & Building Ltd — Single ply membranes, Flat, pitched & rounded, Green & ballasted roofs, Fixing methods. United Kingdom.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/maincare-roofing.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "pickles-roofing",
+   "url": "pickles-roofing/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/pickles-roofing/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Pickles Roofing",
+   "category": "Roofing",
+   "trade": "Roofing",
+   "tags": [
+    "Web",
+    "Roofing"
+   ],
+   "country": "UK",
+   "area": "Leeds & Yorkshire",
+   "pageTitle": "Pickles Roofing | Leeds & Yorkshire",
+   "description": "Pickles Roofing — Flat roof systems, Concrete & clay tiling, Slating, Repairs & maintenance. Leeds & Yorkshire.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/pickles-roofing.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "pjc-landscapes",
+   "url": "pjc-landscapes/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/pjc-landscapes/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "PJC Landscapes Ltd",
+   "category": "Landscaping",
+   "trade": "Landscaping",
+   "tags": [
+    "Web",
+    "Landscaping"
+   ],
+   "country": "UK",
+   "area": "Caterham, Surrey",
+   "pageTitle": "PJC Landscapes Ltd | Caterham, Surrey",
+   "description": "PJC Landscapes Ltd — Landscaping, Paving & patios, Garden design, Pergolas & more. Caterham, Surrey — incl. Bromley & Oxted.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/pjc-landscapes.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "david-crowder-landscapes",
+   "url": "david-crowder-landscapes/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/david-crowder-landscapes/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "David Crowder Landscapes",
+   "category": "Landscaping",
+   "trade": "Landscaping",
+   "tags": [
+    "Web",
+    "Landscaping"
+   ],
+   "country": "UK",
+   "area": "Sandhurst, Berkshire",
+   "pageTitle": "David Crowder Landscapes | Sandhurst, Berkshire",
+   "description": "David Crowder Landscapes — Design service, Paving & driveways, Resin surfacing, Artificial grass. Sandhurst, Berkshire.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/david-crowder-landscapes.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "landscapes-by-genuine",
+   "url": "landscapes-by-genuine/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/landscapes-by-genuine/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Landscapes By Genuine",
+   "category": "Landscaping",
+   "trade": "Landscaping",
+   "tags": [
+    "Web",
+    "Landscaping"
+   ],
+   "country": "Canada",
+   "area": "Calgary & area, AB",
+   "pageTitle": "Landscapes By Genuine | Calgary, Airdrie, Cochrane & Okotoks, AB",
+   "description": "Landscapes By Genuine — Landscape construction, Property maintenance, Snow removal. Calgary, Airdrie, Cochrane & Okotoks, AB.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/landscapes-by-genuine.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "gd-landscapes",
+   "url": "gd-landscapes/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/gd-landscapes/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "GD Landscapes",
+   "category": "Landscaping",
+   "trade": "Landscaping",
+   "tags": [
+    "Web",
+    "Landscaping"
+   ],
+   "country": "UK",
+   "area": "Banbury, Oxfordshire",
+   "pageTitle": "GD Landscapes | Banbury, Oxfordshire",
+   "description": "GD Landscapes — Garden makeovers, Paving, patios & driveways, Decking, gates & fencing, Planting & turfing. Banbury, Oxfordshire.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/gd-landscapes.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "landsailor-roofing",
+   "url": "landsailor-roofing/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/landsailor-roofing/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "LandSailor Roofing",
+   "category": "Roofing",
+   "trade": "Roofing",
+   "tags": [
+    "Web",
+    "Roofing"
+   ],
+   "country": "Canada",
+   "area": "Scarborough & the GTA, Ontario",
+   "pageTitle": "LandSailor Roofing | Scarborough & the GTA, Ontario",
+   "description": "LandSailor Roofing — Roof repairs & replacement, Flat & metal roofing, Commercial roofing, Skylights & roof additions. Scarborough & the GTA, Ontario.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/landsailor-roofing.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "cayco-landscaping",
+   "url": "cayco-landscaping/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/cayco-landscaping/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Cayco Landscaping",
+   "category": "Landscaping",
+   "trade": "Landscaping",
+   "tags": [
+    "Web",
+    "Landscaping"
+   ],
+   "country": "US",
+   "area": "United States",
+   "pageTitle": "Cayco Landscaping | United States",
+   "description": "Cayco Landscaping — Commercial landscaping, Landscape design & installation, Irrigation & water management, Tree trimming. United States.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/cayco-landscaping.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "jpb-lofts-extensions",
+   "url": "jpb-lofts-extensions/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/jpb-lofts-extensions/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "JPB Lofts and Extensions Ltd",
+   "category": "Lofts",
+   "trade": "Lofts",
+   "tags": [
+    "Web",
+    "Lofts",
+    "Construction"
+   ],
+   "country": "UK",
+   "area": "South London & Surrey",
+   "pageTitle": "JPB Lofts and Extensions Ltd | South London & Surrey",
+   "description": "JPB Lofts and Extensions Ltd — Loft conversions, Extensions, Kitchens, Bathrooms. South London & Surrey.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/jpb-lofts-extensions.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "scott-miller-landscaping",
+   "url": "scott-miller-landscaping/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/scott-miller-landscaping/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Scott Miller Landscaping LTD",
+   "category": "Landscaping",
+   "trade": "Landscaping",
+   "tags": [
+    "Web",
+    "Landscaping"
+   ],
+   "country": "US",
+   "area": "Doylestown & Bucks County, PA",
+   "pageTitle": "Scott Miller Landscaping LTD | Doylestown & Bucks County, PA",
+   "description": "Scott Miller Landscaping LTD — Landscaping, Hardscaping, Maintenance plans, Design & consulting. Doylestown & Bucks County, PA.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/scott-miller-landscaping.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "digiovanna-bros-landscaping",
+   "url": "digiovanna-bros-landscaping/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/digiovanna-bros-landscaping/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "DiGiovanna Bros. Landscaping, Inc.",
+   "category": "Landscaping",
+   "trade": "Landscaping",
+   "tags": [
+    "Web",
+    "Landscaping"
+   ],
+   "country": "US",
+   "area": "Long Island, NY",
+   "pageTitle": "DiGiovanna Bros. Landscaping, Inc. | Long Island, NY",
+   "description": "DiGiovanna Bros. Landscaping, Inc. — Planting installations, Tree work, Erosion & hydroseeding, Maintenance contracts. Long Island, NY.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/digiovanna-bros-landscaping.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "dj-moore-lofts",
+   "url": "dj-moore-lofts/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/dj-moore-lofts/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "DJ Moore Lofts",
+   "category": "Lofts",
+   "trade": "Lofts",
+   "tags": [
+    "Web",
+    "Lofts",
+    "Construction"
+   ],
+   "country": "UK",
+   "area": "Bedfordshire",
+   "pageTitle": "DJ Moore Lofts | Bedfordshire",
+   "description": "DJ Moore Lofts — Dormer conversions, VELUX® conversions, Hip to gable conversions, Design & planning. Bedfordshire.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/dj-moore-lofts.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "sandys-landscapes",
+   "url": "sandys-landscapes/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/sandys-landscapes/",
+   "group": "batch1",
+   "kind": "demo",
+   "name": "Sandy's Landscapes",
+   "category": "Landscaping",
+   "trade": "Landscaping",
+   "tags": [
+    "Web",
+    "Landscaping"
+   ],
+   "country": "UK",
+   "area": "Pembrokeshire & West Wales",
+   "pageTitle": "Sandy's Landscapes | Pembrokeshire & West Wales",
+   "description": "Sandy's Landscapes — Garden design, Driveways, patios & paths, Fencing, Decking & walls. Pembrokeshire & West Wales.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-18T23:36:38+04:00",
+   "updated": "2026-10-18T23:36:38+04:00",
+   "history": [
+    "2026-10-18T23:36:38+04:00"
+   ],
+   "thumb": "assets/thumbs/sandys-landscapes.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "heartlands-marble",
+   "url": "heartlands-marble/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/heartlands-marble/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Heartlands Marble",
+   "category": "Marble",
+   "trade": "Marble",
+   "tags": [
+    "Web",
+    "Marble"
+   ],
+   "country": "UK",
+   "area": "Birmingham, West Midlands",
+   "pageTitle": "Heartlands Marble | Made-to-measure marble fireplaces from Birmingham — Birmingham, West Midlands",
+   "description": "Heartlands Marble — Marble fireplaces, Limestone fireplaces, Granite & slate, Electric suites. Birmingham, West Midlands.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/heartlands-marble.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "steven-mcdonald-granite",
+   "url": "steven-mcdonald-granite/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/steven-mcdonald-granite/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Steven McDonald Granite Ltd",
+   "category": "Marble",
+   "trade": "Marble",
+   "tags": [
+    "Web",
+    "Marble"
+   ],
+   "country": "UK",
+   "area": "Scottish Borders, Scotland",
+   "pageTitle": "Steven McDonald Granite Ltd | Granite, quartz & Silestone worktops made in the Scottish Borders — Scottish Borders, Scotland",
+   "description": "Steven McDonald Granite Ltd — Granite worktops, Quartz & Silestone, Curved stonework, Sinks, taps & hobs. Scottish Borders, Scotland.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/steven-mcdonald-granite.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "pk-joinery-interiors",
+   "url": "pk-joinery-interiors/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/pk-joinery-interiors/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "P K Joinery & Interiors Ltd",
+   "category": "Shopfitting",
+   "trade": "Shopfitting",
+   "tags": [
+    "Web",
+    "Shopfitting",
+    "Joinery",
+    "Interior"
+   ],
+   "country": "UK",
+   "area": "Sutton Coldfield, West Midlands",
+   "pageTitle": "P K Joinery & Interiors Ltd | Shopfitting by professional joiners — Sutton Coldfield, West Midlands",
+   "description": "P K Joinery & Interiors Ltd — Shopfitting, Bespoke fittings, Refurbishment, Controlled area refurbishment. Sutton Coldfield, West Midlands.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/pk-joinery-interiors.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "a3-shopfitting-joinery",
+   "url": "a3-shopfitting-joinery/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/a3-shopfitting-joinery/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "A3 Shopfitting & Joinery Ltd",
+   "category": "Shopfitting",
+   "trade": "Shopfitting",
+   "tags": [
+    "Web",
+    "Shopfitting",
+    "Joinery"
+   ],
+   "country": "UK",
+   "area": "Bordon, Hampshire",
+   "pageTitle": "A3 Shopfitting & Joinery Ltd | Quality shop fitting contractors across Hampshire — Bordon, Hampshire",
+   "description": "A3 Shopfitting & Joinery Ltd — Shop fitting, Retail projects, Commercial interiors, Free design service. Bordon, Hampshire.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/a3-shopfitting-joinery.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "gcc-concepts",
+   "url": "gcc-concepts/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/gcc-concepts/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "GCC Concepts Ltd",
+   "category": "Shopfitting",
+   "trade": "Shopfitting",
+   "tags": [
+    "Web",
+    "Shopfitting",
+    "Joinery"
+   ],
+   "country": "UK",
+   "area": "Birmingham",
+   "pageTitle": "GCC Concepts Ltd | Bespoke shopfitters and counter makers — Birmingham",
+   "description": "GCC Concepts Ltd — Shopfitting, Bespoke counters, Joinery & seating, Solid surface work. Birmingham.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/gcc-concepts.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "sullivan-brothers-london",
+   "url": "sullivan-brothers-london/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/sullivan-brothers-london/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Sullivan Brothers (London) Ltd",
+   "category": "Shopfitting",
+   "trade": "Shopfitting",
+   "tags": [
+    "Web",
+    "Shopfitting",
+    "Joinery"
+   ],
+   "country": "UK",
+   "area": "Watford & London",
+   "pageTitle": "Sullivan Brothers (London) Ltd | Shopfitting for bars, pubs and coffee shops — Watford & London",
+   "description": "Sullivan Brothers (London) Ltd — Bar fit-outs, Pub refurbishment, Coffee shops, Commercial joinery. Watford & London.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/sullivan-brothers-london.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "samwood-kitchens",
+   "url": "samwood-kitchens/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/samwood-kitchens/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Samwood Kitchens",
+   "category": "Joinery",
+   "trade": "Joinery",
+   "tags": [
+    "Web",
+    "Joinery",
+    "Interior"
+   ],
+   "country": "Canada",
+   "area": "Concord, Ontario — the GTA",
+   "pageTitle": "Samwood Kitchens | Custom kitchens and cabinetry for the GTA — Concord, Ontario",
+   "description": "Samwood Kitchens — Classic kitchens, Modern kitchens, Bathroom vanities, Closet organizers. Concord, Ontario — the GTA.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/samwood-kitchens.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "solid-edge-wood-products",
+   "url": "solid-edge-wood-products/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/solid-edge-wood-products/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Solid Edge Wood Products",
+   "category": "Joinery",
+   "trade": "Joinery",
+   "tags": [
+    "Web",
+    "Joinery"
+   ],
+   "country": "Canada",
+   "area": "Brownsville, Ontario",
+   "pageTitle": "Solid Edge Wood Products | Custom handcrafted cabinetry and furniture from Ontario hardwoods — Brownsville, Ontario",
+   "description": "Solid Edge Wood Products — Custom cabinetry, Custom furniture, Free consultation. Brownsville, Ontario.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/solid-edge-wood-products.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "spaces-inc",
+   "url": "spaces-inc/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/spaces-inc/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Spaces Inc.",
+   "category": "Joinery",
+   "trade": "Joinery",
+   "tags": [
+    "Web",
+    "Joinery",
+    "Interior"
+   ],
+   "country": "Canada",
+   "area": "Woodbridge, Ontario",
+   "pageTitle": "Spaces Inc. | Custom cabinetry & storage solutions — Woodbridge, Ontario",
+   "description": "Spaces Inc. — Custom kitchens, Vanities & closets, Mudrooms & offices, Home theatre & built-ins. Woodbridge, Ontario.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/spaces-inc.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "bkd-cabinetry",
+   "url": "bkd-cabinetry/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/bkd-cabinetry/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "BKD Cabinetry",
+   "category": "Joinery",
+   "trade": "Joinery",
+   "tags": [
+    "Web",
+    "Joinery",
+    "Interior"
+   ],
+   "country": "Canada",
+   "area": "Toronto & the GTA",
+   "pageTitle": "BKD Cabinetry | Built-in cabinetry crafted to belong in your home — Toronto & the GTA",
+   "description": "BKD Cabinetry — Custom kitchens, Built-ins, Closets & mudrooms, Bath & feature walls. Toronto & the GTA.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/bkd-cabinetry.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "the-gardener-and-co",
+   "url": "the-gardener-and-co/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/the-gardener-and-co/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "The Gardener & Co",
+   "category": "Landscaping",
+   "trade": "Landscaping",
+   "tags": [
+    "Web",
+    "Landscaping"
+   ],
+   "country": "Australia",
+   "area": "Gold Coast & Byron Bay",
+   "pageTitle": "The Gardener & Co | Expert gardening services for your home — Gold Coast & Byron Bay",
+   "description": "The Gardener & Co — Garden maintenance, Lawn care, Landscape design, Garden makeovers. Gold Coast & Byron Bay.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/the-gardener-and-co.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "hluus-concreting",
+   "url": "hluus-concreting/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/hluus-concreting/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "HLuu’s Concreting",
+   "category": "Concrete",
+   "trade": "Concrete",
+   "tags": [
+    "Web",
+    "Concrete",
+    "Landscaping"
+   ],
+   "country": "Australia",
+   "area": "Brisbane & Gold Coast, QLD",
+   "pageTitle": "HLuu’s Concreting | Concrete works & structural landscaping — Brisbane & Gold Coast, QLD",
+   "description": "HLuu’s Concreting — Plain concrete, Exposed aggregate, Landscaping & turf, Concrete sleepers. Brisbane & Gold Coast, QLD.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/hluus-concreting.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "bmk-stoneworks",
+   "url": "bmk-stoneworks/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/bmk-stoneworks/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "BMK Stoneworks",
+   "category": "Marble",
+   "trade": "Marble",
+   "tags": [
+    "Web",
+    "Marble"
+   ],
+   "country": "Australia",
+   "area": "Neerabup, Perth WA",
+   "pageTitle": "BMK Stoneworks | Specialists in luxury benchtops — Neerabup, Perth WA",
+   "description": "BMK Stoneworks — Kitchen benchtops, Bathroom vanities, Custom stonework. Neerabup, Perth WA.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/bmk-stoneworks.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "kersbrook-cabinet-makers",
+   "url": "kersbrook-cabinet-makers/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/kersbrook-cabinet-makers/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Kersbrook Cabinet Makers",
+   "category": "Joinery",
+   "trade": "Joinery",
+   "tags": [
+    "Web",
+    "Joinery"
+   ],
+   "country": "Australia",
+   "area": "Kersbrook & Adelaide, SA",
+   "pageTitle": "Kersbrook Cabinet Makers | Custom kitchens, vanities and laundries in Adelaide — Kersbrook & Adelaide, SA",
+   "description": "Kersbrook Cabinet Makers — Custom kitchens, Bathroom vanities, Laundries, Benchtops. Kersbrook & Adelaide, SA.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/kersbrook-cabinet-makers.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "solid-surface-benchtops",
+   "url": "solid-surface-benchtops/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/solid-surface-benchtops/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Solid Surface Benchtops & More",
+   "category": "Marble",
+   "trade": "Marble",
+   "tags": [
+    "Web",
+    "Marble"
+   ],
+   "country": "Australia",
+   "area": "Adelaide, SA",
+   "pageTitle": "Solid Surface Benchtops & More | Solid surface benchtops and custom surfaces, Adelaide — Adelaide, SA",
+   "description": "Solid Surface Benchtops & More — Solid surface benchtops, Custom surfaces, Benchtop replacement, Certified fabrication. Adelaide, SA.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/solid-surface-benchtops.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "dallas-countertops-floors",
+   "url": "dallas-countertops-floors/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/dallas-countertops-floors/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Dallas Countertops & Floors",
+   "category": "Marble",
+   "trade": "Marble",
+   "tags": [
+    "Web",
+    "Marble",
+    "Joinery"
+   ],
+   "country": "US",
+   "area": "Balch Springs, TX — Dallas area",
+   "pageTitle": "Dallas Countertops & Floors | Luxury countertops, built to last — Balch Springs, TX",
+   "description": "Dallas Countertops & Floors — Custom countertops, Porcelain surfaces, Kitchen cabinets, Home remodeling. Balch Springs, TX — Dallas area.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/dallas-countertops-floors.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "wise-granite-quartz",
+   "url": "wise-granite-quartz/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/wise-granite-quartz/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Wise Granite & Quartz Countertops",
+   "category": "Marble",
+   "trade": "Marble",
+   "tags": [
+    "Web",
+    "Marble"
+   ],
+   "country": "US",
+   "area": "Decatur, TX — Wise County",
+   "pageTitle": "Wise Granite & Quartz Countertops | Countertops and sinks for North Texas — Decatur, TX",
+   "description": "Wise Granite & Quartz Countertops — Granite countertops, Quartz & quartzite, Marble countertops, Sinks. Decatur, TX — Wise County.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/wise-granite-quartz.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "heart-of-texas-granite",
+   "url": "heart-of-texas-granite/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/heart-of-texas-granite/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Heart of Texas Granite & Marble",
+   "category": "Marble",
+   "trade": "Marble",
+   "tags": [
+    "Web",
+    "Marble"
+   ],
+   "country": "US",
+   "area": "Brownwood, TX — Central Texas",
+   "pageTitle": "Heart of Texas Granite & Marble | Granite & marble countertops in Brownwood, TX — Brownwood, TX",
+   "description": "Heart of Texas Granite & Marble — Granite countertops, Marble countertops, Quartz & quartzite, Bathroom & vanity. Brownwood, TX — Central Texas.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/heart-of-texas-granite.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "de-leon-granite",
+   "url": "de-leon-granite/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/de-leon-granite/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "De Leon Granite Countertops",
+   "category": "Marble",
+   "trade": "Marble",
+   "tags": [
+    "Web",
+    "Marble"
+   ],
+   "country": "US",
+   "area": "Dallas–Fort Worth, TX",
+   "pageTitle": "De Leon Granite Countertops | Stone countertops for Dallas–Fort Worth — Dallas–Fort Worth, TX",
+   "description": "De Leon Granite Countertops — Countertops, Sinks, Backsplash, In-home consultation. Dallas–Fort Worth, TX.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/de-leon-granite.webp",
+   "status": "Live"
+  },
+  {
+   "slug": "georgia-high-quality-construction",
+   "url": "georgia-high-quality-construction/",
+   "live": "https://mxhoaib.github.io/d3ddd-demos/georgia-high-quality-construction/",
+   "group": "batch2",
+   "kind": "demo",
+   "name": "Georgia High Quality Construction",
+   "category": "Roofing",
+   "trade": "Roofing",
+   "tags": [
+    "Web",
+    "Roofing",
+    "Construction"
+   ],
+   "country": "US",
+   "area": "Georgia, United States",
+   "pageTitle": "Georgia High Quality Construction | Quality roof replacements from trusted experts — Georgia, United States",
+   "description": "Georgia High Quality Construction — Roof repairs & replacements, Siding, Gutters, Painting. Georgia, United States.",
+   "pages": 1,
+   "commits": 1,
+   "published": "2026-10-19T08:50:36+04:00",
+   "updated": "2026-10-19T08:50:36+04:00",
+   "history": [
+    "2026-10-19T08:50:36+04:00"
+   ],
+   "thumb": "assets/thumbs/georgia-high-quality-construction.webp",
+   "status": "Live"
+  }
+ ]
+}
