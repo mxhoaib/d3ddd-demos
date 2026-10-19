@@ -1,6 +1,6 @@
 (function () {
   "use strict";
-  var VIEWS = ["list", "board", "timeline", "calendar", "progress"];
+  var VIEWS = ["list", "board", "timeline", "calendar", "progress", "views"];
   var ACCENT = { purple: ["#7b6cf6", "#ece9fe", "#5444d6"], yellow: ["#f5c142", "#fdf3d6", "#8a6500"], teal: ["#2bbfa4", "#daf5ef", "#147a67"], pink: ["#f47aa0", "#fde4ec", "#b8335d"] };
   var TAG = {
     Web: ["#ece9fe", "#5444d6"], "3D": ["#fde4ec", "#b8335d"], Interior: ["#daf5ef", "#147a67"], Construction: ["#fdf3d6", "#8a6500"],
@@ -12,7 +12,7 @@
   var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   var STORE = "d3ddd-board-v1";
 
-  var DATA, SITES = [], GROUPS = [], state = { q: "", country: "", trade: "", sort: { key: "published", dir: 1 }, month: null };
+  var DATA, VDATA = null, SITES = [], GROUPS = [], state = { q: "", country: "", trade: "", sort: { key: "published", dir: 1 }, month: null };
   var $ = function (s, r) { return (r || document).querySelector(s); };
 
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
@@ -24,6 +24,16 @@
   function fmtTime(iso) { var d = new Date(iso); return fmtDate(iso) + ", " + String(d.getUTCHours()).padStart(2, "0") + ":" + String(d.getUTCMinutes()).padStart(2, "0") + " UTC"; }
   function plural(n, w) { return n + " " + w + (n === 1 ? "" : "s"); }
   function toast(msg) { var t = $("#toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast._t); toast._t = setTimeout(function () { t.classList.remove("show"); }, 1800); }
+
+  var EYE = '<svg class="eye" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>';
+  function hasViews() { return !!(VDATA && VDATA.status === "ok"); }
+  function viewsOf(slug) {
+    if (!hasViews()) return null;
+    for (var i = 0; i < VDATA.demos.length; i++) if (VDATA.demos[i].slug === slug) return VDATA.demos[i].views;
+    return 0;
+  }
+  function num(n) { return n == null ? "–" : Number(n).toLocaleString("en-GB"); }
+  function viewChip(s) { var v = viewsOf(s.slug); return '<span class="vc" title="' + (v == null ? "No view data yet" : plural(v, "view") + " in the last 30 days") + '">' + EYE + num(v) + "</span>"; }
 
   function matches(s) {
     if (state.country && s.country !== state.country) return false;
@@ -48,7 +58,7 @@
       '<p class="title"><svg class="check" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2bbfa4"/><path d="m5 8.2 2 2 4-4.4" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>' + esc(s.name) + "</span></p>" +
       '<p class="sub">' + esc(s.category) + " · " + esc(s.area) + "</p>" +
       '<div class="pills">' + s.tags.map(pill).join("") + "</div>" +
-      '<div class="meta"><span class="avatar" title="D3DDD">D3</span><span class="country">' + esc(s.country) + '</span><span class="muted">' + plural(s.pages, "page") + '</span><span class="status">Live</span>' +
+      '<div class="meta"><span class="avatar" title="D3DDD">D3</span><span class="country">' + esc(s.country) + '</span><span class="muted pg">' + plural(s.pages, "page") + "</span>" + viewChip(s) + '<span class="status">Live</span>' +
       '<a class="open" href="' + esc(s.url) + '" draggable="false" aria-label="Open ' + esc(s.name) + ' demo">Open ↗</a></div>';
   }
 
@@ -108,7 +118,7 @@
   var COLS = [
     { key: "thumb", label: "", sort: false },
     { key: "name", label: "Name" }, { key: "group", label: "Group" }, { key: "country", label: "Country" }, { key: "area", label: "Area" },
-    { key: "trade", label: "Trade" }, { key: "pages", label: "Pages" }, { key: "published", label: "Published" }, { key: "updated", label: "Updated" },
+    { key: "trade", label: "Trade" }, { key: "pages", label: "Pages" }, { key: "views", label: "Views" }, { key: "published", label: "Published" }, { key: "updated", label: "Updated" },
     { key: "status", label: "Status" }, { key: "open", label: "", sort: false }
   ];
   function renderList() {
@@ -120,14 +130,14 @@
     }).join("") + "</tr>";
     var k = state.sort.key, d = state.sort.dir;
     var rows = visible().slice().sort(function (a, b) {
-      var x = k === "group" ? group(a.group).title : a[k], y = k === "group" ? group(b.group).title : b[k];
+      var x = k === "group" ? group(a.group).title : k === "views" ? viewsOf(a.slug) || 0 : a[k], y = k === "group" ? group(b.group).title : k === "views" ? viewsOf(b.slug) || 0 : b[k];
       if (typeof x === "number") return (x - y) * d || a.name.localeCompare(b.name);
       return String(x).localeCompare(String(y)) * d || a.name.localeCompare(b.name);
     });
     tbody.innerHTML = rows.map(function (s) {
       return '<tr><td><img class="mini" src="' + esc(s.thumb) + '" alt="" width="56" height="35" loading="lazy"></td><td class="name">' + esc(s.name) + '<div class="muted small">' + esc(s.category) + "</div></td><td>" + esc(group(s.group).title) + "</td><td>" + esc(s.country) + "</td><td>" + esc(s.area) +
-        "</td><td>" + pill(s.trade) + "</td><td>" + s.pages + "</td><td>" + fmtDate(s.published) + "</td><td>" + fmtDate(s.updated) + '</td><td><span class="status">Live</span></td><td><a class="open" href="' + esc(s.url) + '">Open ↗</a></td></tr>';
-    }).join("") || '<tr><td colspan="11" class="muted">No demos match</td></tr>';
+        "</td><td>" + pill(s.trade) + "</td><td>" + s.pages + "</td><td>" + viewChip(s) + "</td><td>" + fmtDate(s.published) + "</td><td>" + fmtDate(s.updated) + '</td><td><span class="status">Live</span></td><td><a class="open" href="' + esc(s.url) + '">Open ↗</a></td></tr>';
+    }).join("") || '<tr><td colspan="12" class="muted">No demos match</td></tr>';
   }
   function initList() {
     function go(th) { if (!th || !th.dataset.key) return; var k = th.dataset.key; state.sort = { key: k, dir: state.sort.key === k ? -state.sort.dir : 1 }; renderList(); }
@@ -242,8 +252,75 @@
     $("#overview").innerHTML = side + "<div>" + digest + charts + "</div>" + brk;
   }
 
+  /* ---------- views (GoatCounter aggregates) ---------- */
+  var SRC_COLOR = { Google: "#6ea8fe", Bing: "#2bbfa4", Email: "#f5c142", Fiverr: "#9ad06a", LinkedIn: "#5444d6", Facebook: "#f47aa0", Direct: "#7b6cf6", Other: "#c3c7cf" };
+  var DEV_COLOR = { Desktop: "#7b6cf6", Mobile: "#f47aa0", Tablet: "#f5c142", Unknown: "#c3c7cf" };
+  function pairs(list) { return (list || []).map(function (x) { return [x.name, x.views]; }); }
+  function emptyNote(t) { return '<div class="v-empty small">' + esc(t || "No data yet") + "</div>"; }
+  function vDonut(title, entries, colors) {
+    if (!entries.length) return '<div class="panel"><div class="panel-head"><h2>' + esc(title) + "</h2></div>" + emptyNote() + "</div>";
+    return donut(title, entries, "views", function (k, i) { return colors[k] || CHART[i % CHART.length]; });
+  }
+  function lineChart(daily) {
+    var W = 700, H = 200, n = daily.length, max = Math.max.apply(null, daily.map(function (d) { return d.views; }).concat([0]));
+    var top = max <= 4 ? 4 : Math.ceil(max / 4 / Math.pow(10, Math.floor(Math.log10(max / 4)))) * Math.pow(10, Math.floor(Math.log10(max / 4))) * 4;
+    var x = function (i) { return n > 1 ? i / (n - 1) * W : W / 2; }, y = function (v) { return H - v / top * (H - 8); };
+    var pts = daily.map(function (d, i) { return x(i).toFixed(1) + "," + y(d.views).toFixed(1); });
+    var svg = '<svg class="line" viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="none" role="img" aria-label="Daily views, last ' + n + ' days"><defs><linearGradient id="vfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f47aa0" stop-opacity=".28"/><stop offset="1" stop-color="#f47aa0" stop-opacity="0"/></linearGradient></defs>';
+    [0, .25, .5, .75, 1].forEach(function (f) { svg += '<line x1="0" x2="' + W + '" y1="' + y(top * f).toFixed(1) + '" y2="' + y(top * f).toFixed(1) + '" stroke="#eef0f3" vector-effect="non-scaling-stroke"/>'; });
+    if (n) {
+      svg += '<path d="M0,' + H + " L" + pts.join(" L") + " L" + W + "," + H + ' Z" fill="url(#vfill)"/>';
+      svg += '<polyline points="' + pts.join(" ") + '" fill="none" stroke="#f47aa0" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>';
+      daily.forEach(function (d, i) { var w = W / n; svg += '<rect class="hit" x="' + (x(i) - w / 2).toFixed(1) + '" y="0" width="' + w.toFixed(1) + '" height="' + H + '"><title>' + esc(fmtDate(d.day + "T12:00:00Z") + ": " + plural(d.views, "view")) + "</title></rect>"; });
+    }
+    svg += "</svg>";
+    var yl = [1, .5, 0].map(function (f) { return "<span>" + num(Math.round(top * f)) + "</span>"; }).join("");
+    var xl = n ? [daily[0], daily[Math.floor((n - 1) / 2)], daily[n - 1]].map(function (d) { var t = new Date(d.day + "T12:00:00Z"); return "<span>" + t.getUTCDate() + " " + MONTHS[t.getUTCMonth()].slice(0, 3) + "</span>"; }).join("") : "";
+    return '<div class="chart"><div class="y-ax">' + yl + '</div><div class="plot">' + svg + '<div class="x-ax">' + xl + "</div></div></div>";
+  }
+  function barList(list, total, colorFn, badgeFn) {
+    if (!list.length) return emptyNote();
+    var max = Math.max.apply(null, list.map(function (x) { return x.views; }).concat([1]));
+    return '<ul class="brk">' + list.map(function (c, i) {
+      var pc = total ? Math.round(c.views / total * 100) : 0;
+      return "<li>" + (badgeFn ? '<span class="avatar" style="background:#f3f4f6;color:#4b4f56">' + esc(badgeFn(c)) + "</span>" : "") + '<div class="lbl"><b>' + esc(c.name) + '</b><div class="bar"><i style="width:' + (c.views / max * 100) + "%;background:" + colorFn(c, i) + '"></i></div><span class="muted small">' + pc + '% of views</span></div><span class="n">' + num(c.views) + "</span></li>";
+    }).join("") + "</ul>";
+  }
+  function renderViews() {
+    var box = $("#vstats");
+    if (!VDATA) { box.innerHTML = '<div class="panel">' + emptyNote(VDATA === false ? "View stats could not be loaded. Please refresh the page." : "Loading view stats…") + "</div>"; return; }
+    var V = VDATA, ok = hasViews(), t = V.totals || {}, bySlug = {};
+    SITES.forEach(function (s) { bySlug[s.slug] = s; });
+    var demos = (V.demos || []).filter(function (d) { return bySlug[d.slug] && matches(bySlug[d.slug]); });
+    var topDemo = (V.demos || [])[0], srcs = V.sources || [], srcTotal = srcs.reduce(function (n, x) { return n + x.views; }, 0);
+    var topSrc = srcs[0];
+    var head = '<div class="v-head"><div><h2>Where views come from</h2><span class="muted small">Anonymous, aggregate stats from GoatCounter · last ' + (V.range ? V.range.days : 30) + " days" + (V.range ? " (" + fmtDate(V.range.start + "T12:00:00Z") + " – " + fmtDate(V.range.end + "T12:00:00Z") + ")" : "") + '</span></div><span class="v-upd">Last updated ' + (V.updated ? fmtTime(V.updated) : "–") + "</span></div>";
+    var banner = ok ? "" : '<div class="panel v-banner"><span class="v-ico" aria-hidden="true">' + EYE + '</span><div><b>No data yet</b><p class="muted small">View counts appear here after the next stats update. Only anonymous totals are shown: no IP addresses and no personal data.</p></div></div>';
+    var tiles = '<div class="digest v-tiles">' + [
+      [ok ? num(t.views) : "–", "Total views", ok ? "last 30 days" : "no data yet"],
+      [ok ? num(t.visitors) : "–", "Visitors", ok ? "unique, anonymous" : "no data yet"],
+      [ok && topDemo ? esc(topDemo.name) : "–", "Top demo", ok && topDemo ? plural(topDemo.views, "view") : ok ? "hub page only" : "no data yet"],
+      [ok && topSrc ? esc(topSrc.name) : "–", "Top source", ok && topSrc && srcTotal ? Math.round(topSrc.views / srcTotal * 100) + "% of views" : "no data yet"]
+    ].map(function (d, i) { return '<div class="stat' + (i > 1 ? " txt" : "") + '"><b title="' + d[0] + '">' + d[0] + "</b><span>" + d[1] + '</span><em class="muted small">' + d[2] + "</em></div>"; }).join("") + "</div>";
+    var line = '<div class="panel v-line"><div class="panel-head"><h2>Daily views</h2><span class="muted small">' + (ok ? plural(t.views, "view") + " in " + (V.daily || []).length + " days (UTC)" : "No data yet") + "</span></div>" + lineChart(V.daily || []) + "</div>";
+    var countries = V.countries || [], cTotal = countries.reduce(function (n, x) { return n + x.views; }, 0);
+    var three = '<div class="v-three">' + vDonut("Sources", pairs(srcs), SRC_COLOR) + vDonut("Devices", pairs(V.devices), DEV_COLOR) +
+      '<div class="panel"><div class="panel-head"><h2>Countries</h2><span class="muted small">' + (countries.length ? "Top " + countries.length : "No data yet") + "</span></div>" + barList(countries, cTotal, function (c, i) { return CHART[i % CHART.length]; }, function (c) { return c.code || "··"; }) + "</div></div>";
+    var maxD = Math.max.apply(null, demos.map(function (d) { return d.views; }).concat([1]));
+    var rows = demos.slice(0, 15).map(function (d, i) {
+      var s = bySlug[d.slug], a = ACCENT[group(s.group).accent];
+      return '<tr><td class="rk">' + (i + 1) + '</td><td><img class="mini" src="' + esc(s.thumb) + '" alt="" width="56" height="35" loading="lazy"></td><td class="name">' + esc(s.name) + '<div class="muted small">' + esc(s.category) + " · " + esc(s.country) + '</div></td><td class="grp"><span class="pill" style="background:' + a[1] + ";color:" + a[2] + '">' + esc(group(s.group).short || group(s.group).title) + '</span></td><td class="vbar"><div class="bar"><i style="width:' + (d.views / maxD * 100) + "%;background:" + a[0] + '"></i></div></td><td class="n">' + num(d.views) + '</td><td><a class="open" href="' + esc(s.url) + '" aria-label="Open ' + esc(s.name) + '">Open ↗</a></td></tr>';
+    }).join("");
+    var table = '<div class="panel v-table"><div class="panel-head"><h2>Top demos by views</h2><span class="muted small">' + (ok ? "Hub page: " + plural(t.hub || 0, "view") : "No data yet") + '</span></div><div class="scroll-x"><table class="table vt"><thead><tr><th>#</th><th></th><th>Demo</th><th class="grp">Group</th><th class="vbar">Share</th><th>Views</th><th></th></tr></thead><tbody>' +
+      (rows || '<tr><td colspan="7" class="muted">' + (ok ? "No demo views yet in this range" + (demos.length < (V.demos || []).length ? " for these filters" : "") : "No data yet") + "</td></tr>") + "</tbody></table></div></div>";
+    var b = V.browsers || [], sy = V.systems || [], bT = b.reduce(function (n, x) { return n + x.views; }, 0), sT = sy.reduce(function (n, x) { return n + x.views; }, 0);
+    var tech = '<div class="panel v-tech"><div class="panel-head"><h2>Browsers</h2></div>' + barList(b, bT, function (c, i) { return CHART[i % CHART.length]; }) +
+      '<div class="panel-head" style="margin-top:16px"><h2>Operating systems</h2></div>' + barList(sy, sT, function (c, i) { return CHART[(i + 3) % CHART.length]; }) + "</div>";
+    box.innerHTML = head + banner + tiles + line + three + '<div class="v-two">' + table + tech + "</div>";
+  }
+
   /* ---------- shell ---------- */
-  var renderers = { board: renderBoard, list: renderList, timeline: renderTimeline, calendar: renderCalendar, progress: renderProgress };
+  var renderers = { board: renderBoard, list: renderList, timeline: renderTimeline, calendar: renderCalendar, progress: renderProgress, views: renderViews };
   function current() { var h = location.hash.replace("#", ""); return VIEWS.indexOf(h) >= 0 ? h : "board"; }
   function show() {
     var v = current();
@@ -271,7 +348,14 @@
     show(); refresh();
   }
 
+  function loadViews() {
+    return fetch("views.json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (v) { VDATA = v; }).catch(function () { VDATA = false; })
+      .then(function () { if (DATA) renderers[current()](); });
+  }
+
   show();
+  loadViews();
   fetch("data.json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(init).catch(function () {
     $("#summary").textContent = "Could not load the demo list. Please refresh the page.";
   });

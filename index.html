@@ -35,7 +35,7 @@
 <header class="nav">
   <a class="brand" href="#board" aria-label="D3DDD demos home"><span class="logo">D3</span><span class="brand-name">D3DDD <b>Demos</b></span></a>
   <nav class="nav-links" aria-label="Sections">
-    <a href="#board">Projects</a><a href="#timeline">Planning</a><a href="#progress">Overview</a>
+    <a href="#board">Projects</a><a href="#timeline">Planning</a><a href="#progress">Overview</a><a href="#views">Views</a>
   </nav>
   <div class="nav-right">
     <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search demos" aria-label="Search demos"></label>
@@ -55,6 +55,7 @@
         <a role="tab" href="#timeline" data-view="timeline">Timeline</a>
         <a role="tab" href="#calendar" data-view="calendar">Calendar</a>
         <a role="tab" href="#progress" data-view="progress">Progress</a>
+        <a role="tab" href="#views" data-view="views">Views</a>
       </div>
     </div>
     <div class="project-team" aria-hidden="true"><span class="avatar c1">D3</span><span class="avatar c2">D3</span><span class="avatar c3">D3</span></div>
@@ -75,6 +76,7 @@
   <section id="view-timeline" class="view" data-view="timeline" aria-label="Timeline" hidden><div class="panel"><div class="panel-head"><h2>Timeline</h2><span class="muted">From git commit dates (UTC)</span></div><div class="scroll-x"><div id="gantt" class="gantt"></div></div></div></section>
   <section id="view-calendar" class="view" data-view="calendar" aria-label="Calendar" hidden><div class="panel"><div class="panel-head"><h2 id="cal-title">Calendar</h2><div class="cal-nav"><button type="button" class="ghost" id="cal-prev" aria-label="Previous month">‹</button><button type="button" class="ghost" id="cal-next" aria-label="Next month">›</button></div></div><p class="muted small">Each demo is placed on the day it was first published (first git commit, UTC).</p><div id="cal" class="cal"></div><div class="panel-head" style="margin-top:18px"><h2>Published this month</h2></div><div id="agenda" class="agenda"></div></div></section>
   <section id="view-progress" class="view" data-view="progress" aria-label="Progress" hidden><div class="overview" id="overview"></div></section>
+  <section id="view-views" class="view" data-view="views" aria-label="Views" hidden><div class="vstats" id="vstats"><p class="muted">Loading view stats…</p></div></section>
   <noscript><div class="panel"><p>This board needs JavaScript. The full list of demos is in <a href="data.json">data.json</a>.</p></div></noscript>
 </main>
 
